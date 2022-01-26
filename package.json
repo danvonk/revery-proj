@@ -9,7 +9,7 @@
   },
   "esy": {
     "build": "dune build -p App",
-    "buildDev": "refmterr dune build -p App",
+    "buildDev": "dune build -p App",
     "buildsInSource": "_build"
   },
   "revery-packager": {
@@ -38,13 +38,16 @@
     }
   },
   "dependencies": {
-    "revery": "revery-ui/revery#431e515a00ee46f7bc614a10c2a219aae13179e0",
-    "@opam/dune": "2.6.0",
+    "revery": "danvonk/revery#124dad33bbf7eca3164a2f707601a2357464e596",
+    "@opam/dune": "^2.5.0",
     "@revery/timber": "*",
     "esy-macdylibbundler": "*"
   },
+  "resolutions": {
+    "ocaml": "danvonk/ocaml#5d9821b5768b6c738bed32d5c693af8f543da5de",
+    "@opam/printbox": "0.4"
+  },
   "devDependencies": {
-    "ocaml": "~4.9.0",
-    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam#cb8aba2238ba5b0e5a6fe0a3180f25077496f75a"
+    "ocaml": "4.12.x"
   }
 }
