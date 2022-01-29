@@ -2,7 +2,7 @@
   "name": "revery-quick-start",
   "version": "1.4.1",
   "description": "A template for getting started with Revery",
-  "license": "MIT",
+  "license": "BSD",
   "scripts": {
     "format": "bash -c \"refmt --in-place **/*.re\"",
     "run": "esy x App"
@@ -41,13 +41,18 @@
     "revery": "danvonk/revery#124dad33bbf7eca3164a2f707601a2357464e596",
     "@opam/dune": "^2.5.0",
     "@revery/timber": "*",
-    "esy-macdylibbundler": "*"
+    "esy-macdylibbundler": "*",
+    "@opam/lwt": "*",
+    "@brisk/brisk-reconciler": "briskml/brisk-reconciler#c9d5c4c",
+    "@opam/cohttp-lwt-unix" : "*",
+    "@opam/cohttp": "*"
   },
   "resolutions": {
     "ocaml": "danvonk/ocaml#5d9821b5768b6c738bed32d5c693af8f543da5de",
     "@opam/printbox": "0.4"
   },
   "devDependencies": {
-    "ocaml": "4.12.x"
+    "ocaml": "4.12.x",
+    "@opam/ocaml-lsp-server": "*"
   }
 }
